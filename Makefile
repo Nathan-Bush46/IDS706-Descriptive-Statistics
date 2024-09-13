@@ -10,5 +10,5 @@ format:
 	find ./src/tests -name "*.py" -exec black {} +
 
 pdf: 
-	python src/main_workspace/stats_pdf.py
+	python ./src/main_workspace/stats_pdf.py
 all: install test lint format
