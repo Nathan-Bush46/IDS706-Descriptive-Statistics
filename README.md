@@ -4,8 +4,8 @@
 
 ## Quick Explanation
 
-* Creates descriptive statistics and outputs them as a pdf and image into [`folder`](./src/main_workspace/data) using [`python script`](./src/main_workspace/stats_pdf.py)
-* CI/CD pipline also auto runs script to update [`pdf and image`](./src/main_workspace/data)
+* Creates descriptive statistics and outputs them as a pdf and image into [`data folder`](./src/main_workspace/outputs) using [`python script`](./src/main_workspace/stats_pdf.py)
+* CI/CD pipline also auto runs script to update [`pdf and image`](./src/main_workspace/outputs)
 
 ## Set up instructions using VS code + Docker: 
 ### Docker
