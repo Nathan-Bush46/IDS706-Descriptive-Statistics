@@ -10,7 +10,7 @@ def calculate():
     mean = ("mean\n",df_train_x[["stem-height","stem-width"]].mean())
     median= ("median\n",df_train_x[["stem-height","stem-width"]].median())
     std = ("std\n",df_train_x[["stem-height","stem-width"]].std())
-    df_train_x.plot.scatter("stem-height", "stem-width")
+    df_train_x.plot.scatter("stem-width","stem-height")
     plt.savefig('./src/main_workspace/outputs/scatter_plot.png')
     return [mean,median,std]
 
@@ -21,16 +21,16 @@ def print_to_pdf(stats):
 
     pdf_add_stats(stats, pdf, "stem-height")
     pdf.cell(180, 10, txt="", align="C", border=0, ln=True)
-    pdf_add_stats(stats, pdf, "stem-width-height")
+    pdf_add_stats(stats, pdf, "stem-width")
 
     pdf.image("./src/main_workspace/outputs/scatter_plot.png",w=100,type='PNG')
     #save the pdf with name .pdf
     pdf.output("./src/main_workspace/outputs/example_stats.pdf")
 
 def pdf_add_stats(stats, pdf, text):
-    pdf.cell(180, 10, txt="stem-height", align="C", border=1, ln=True)
+    pdf.cell(180, 10, txt=text, align="C", border=1, ln=True)
     for i in range(len(stats)):
-        stat_print = stats[i][0] + " " +str(stats[i][1]["stem-height"])
+        stat_print = stats[i][0] + " " +str(stats[i][1][text])
         pdf.cell(180, 10, txt=stat_print, align="C", border=1, ln=True)
 
 if __name__ == '__main__':
