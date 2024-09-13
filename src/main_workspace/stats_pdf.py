@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from fpdf import FPDF
 
 def calculate():
-    raw_training = pd.read_csv("/workspaces/IDS706-Descriptive-Statistics/src/main_workspace/data/hw1_q3_test_data.csv")
+    raw_training = pd.read_csv("./src/main_workspace/data/hw1_q3_test_data.csv")
     df_train_x = raw_training.iloc[:, :-1]
 #    df_train_y = raw_training.iloc[:, -1]
 
