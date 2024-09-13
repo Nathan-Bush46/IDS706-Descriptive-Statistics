@@ -1,6 +1,11 @@
-# IDS-706-Workspace
+# IDS-Descriptive-Statistics 
 
 [![Docker Image CI](https://github.com/Nathan-Bush46/IDS706-Descriptive-Statistics/actions/workflows/docker-image.yml/badge.svg)](https://github.com/Nathan-Bush46/IDS706-Descriptive-Statistics/actions/workflows/docker-image.yml)
+
+## Quick Explanation
+
+* Creates descriptive statistics and outputs them as a pdf and image into [`data folder`](./src/main_workspace/outputs) using [`python script`](./src/main_workspace/stats_pdf.py)
+* CI/CD pipline also auto runs script to update [`pdf and image`](./src/main_workspace/outputs)
 
 ## Set up instructions using VS code + Docker: 
 ### Docker
@@ -14,7 +19,6 @@
 
 #### Alternatives to Docker
 If you choose not to run docker, use a python virtual environment to prevent conflict with local packages and run the makefile.
-
  
 ## Testing
 

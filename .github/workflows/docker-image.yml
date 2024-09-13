@@ -25,7 +25,7 @@ jobs:
     - name: List files in the repository
       run: |
         ls ${{ github.workspace }}
-    - name: install requrments test
+    - name: install requirements
       run: |
         make install
     - name: run test
