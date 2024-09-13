@@ -1,6 +1,6 @@
 # IDS-706-Workspace
 
-[![Docker Image CI](https://github.com/Nathan-Bush46/IDS-706-Workspace/actions/workflows/docker-image.yml/badge.svg)](https://github.com/Nathan-Bush46/IDS-706-Workspace/actions/workflows/docker-image.yml)
+[![Docker Image CI](https://github.com/Nathan-Bush46/IDS706-Descriptive-Statistics/actions/workflows/docker-image.yml/badge.svg)](https://github.com/Nathan-Bush46/IDS706-Descriptive-Statistics/actions/workflows/docker-image.yml)
 
 ## Set up instructions using VS code + Docker: 
 ### Docker
